@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/* =================== header =================== */
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#wrap .headerinner {
+    width: 1920px;
+    height: 100px;
+    position: relative;
+}
+
+#wrap .headerinner .logo a img {
+    width: 260px;
+    height: 20px;
+    margin: 40px 1500px 40px 160px;
+    position: absolute;
+}
+
+#wrap .headerinner .gnb {
+    width: 626px;
+    height: 40px;
+    position: absolute;
+    margin: 40px 160px 40px 1134px;
+
+}
+
+#wrap header .headerinner .gnb ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+#wrap header .headerinner .gnb ul li a {
+    font-size: 18px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+#wrap header .headerinner .toggle-container {
+    position: relative;
+    width: 40px;height: 40px;
+    cursor: pointer;
+   
+}
+#wrap header .headerinner .toggle-container .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: 0.1s;
+}
+#wrap header .headerinner .toggle-container .line1 {top: 0;}
+#wrap header .headerinner .toggle-container .line2 {top: 18px;}
+#wrap header .headerinner .toggle-container .line3 {bottom: 0;}
+#wrap header .headerinner .toggle-container.active .line1 {transform: translateY(10px) rotate(45deg);}
+#wrap header .headerinner .toggle-container.active .line2 {opacity: 0;}
+#wrap header .headerinner .toggle-container.active .line3 {transform: translateY(-10px) rotate(-45deg);}
+/* =================== main =================== */
+#wrap .maintitle {
+    width: 1920px;
+    height: 1090px;
+    background-color: #fff;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#wrap .maintitle img {
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    bottom: 0;
+}
+
+#wrap .maintitle p {
+    position: absolute;
+    left: 480px;
+    top: 480px;
+}
+
+#wrap .maintitle p strong {
+    margin-bottom: 20px;
+}
+
+#wrap .maintitle h2 {
+    position: absolute;
+    left: 480px;
+    top: 70px;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap .maintitle h2 span {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+#wrap .maintitle h2 strong {
+    font-size: 80px;
+}
+
+#wrap .maintitle .s_txt {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* =================== contaniner =================== */
+#wrap .contaniner {
+    width: 1600px;
+    height: 747px;
+    position: relative;
+    margin: 0 auto;
+    /* border: 1px solid orange; */
+}
+
+#wrap .contaniner .about-section {
+    width: 1200px;
+    height: 540px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid orangered; */
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#wrap .contaniner .about-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#wrap .contaniner .about-section h4 {
+    font-size: 70px;
+    margin-top: 30px;
+    line-height: 1.2;
+}
+
+#wrap .contaniner .about-section p {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+
+#wrap .contaniner .about-section .more-button {
+    width: 180px;
+    height: 60px;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+}
+
+#wrap .contaniner .about-section .more-button a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#wrap .contaniner .about-section .more-button .line {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+
+
+/* =================== flow =================== */
+#wrap .flow {
+    width: 1920px;
+    height: 640px;
+    position: relative;
+    /* border: 1px solid green; */
+
+}
+
+#wrap .flow ul {
+    position: absolute;
+    color: #131313;
+    font-size: 140px;
+}
+
+/* =================== brand =================== */
+#wrap .contaniner2 {
+    width: 1920px;
+    height: 1580px;
+    position: relative;
+    /* border: 1px solid blue; */
+
+}
+
+#wrap .contaniner2 .brand {
+    width: 1280px;
+    height: 210px;
+    top: 160px;
+    left: 319px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* border: 1px solid purple; */
+}
+
+#wrap .contaniner2 .brand .box {
+    width: 640px;
+    height: 140px;
+}
+
+#wrap .contaniner2 .brand .box h5 {
+    font-size: 16px;
+}
+
+#wrap .contaniner2 .brand .box h6 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#wrap .contaniner2 .brand p {
+    width: 640px;
+    height: 140px;
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+#wrap .contaniner2 a img {
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    bottom: 0;
+}
+
+/* =================== Gola =================== */
+#wrap .contaniner2 .Gola {
+    width: 1140px;
+    height: 420px;
+    position: absolute;
+    top: 820px;
+    left: 320px;
+    /* border: 1px solid white; */
+}
+
+#wrap .contaniner2 .Gola .fill {
+    margin: 5px 0;
+}
+
+#wrap .contaniner2 .Gola .fill h1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#wrap .contaniner2 .Gola .fill h2 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#wrap .contaniner2 .Gola p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+#wrap .contaniner2 .Gola .more-button2 {
+    width: 180px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+}
+
+#wrap .contaniner2 .Gola .more-button2 a {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#wrap .contaniner2 .Gola .more-button2 .line2 {
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+/* =================== list =================== */
+#wrap .contaniner2 .list {
+    width: 212px;
+    height: 292px;
+    position: absolute;
+    top: 884px;
+    right: 320px;
+    color: #fff;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 700;
+    /* border: 1px solid white; */
+}
+
+#wrap .contaniner2 .list ul {
+    line-height: 38px;
+}
+
+/* =================== contaniner3 =================== */
+#wrap .contaniner3 {
+    width: 1920px;
+    height: 917px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+#wrap .contaniner3 .box2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+#wrap .contaniner3 .box2 .contact {
+    width: 640px;
+    height: 557px;
+    /* border: 1px solid red; */
+    margin-top: 75px;
+
+}
+
+#wrap .contaniner3 .box2 .contact h1 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#wrap .contaniner3 .box2 .contact h2 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+#wrap .contaniner3 .box2 .contact .fill {
+    margin-top: 60px;
+    /* border: 1px solid palevioletred; */
+}
+
+#wrap .contaniner3 .box2 .fill p {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#wrap .contaniner3 .box2 .contact .fill span {
+    font-weight: normal;
+    font-size: 18px;
+
+}
+
+#wrap .contaniner3 .box2 .kakao-button {
+    width: 186px;
+    height: 49px;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+
+}
+
+#wrap .contaniner3 .box2 .contact .kakao-button a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#wrap .contaniner3 .box2 .contact .kakao-button .line3 {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    top: 25px;
+    right: 10px;
+    position: absolute;
+}
+
+#wrap .contaniner3 .box2 a img {
+    width: 780px;
+    height: 700px;
+
+}
+
+/* =================== footer =================== */
+#wrap .footerinner {
+    width: 1600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-top: 1px solid #e5e5e5;
+    /* border: 1px solid hotpink; */
+
+}
+
+#wrap .footerinner .sns {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 60px 0;
+    line-height: 40px;
+
+}
+
+#wrap .footerinner .copyright {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+#wrap .footerinner .f_contact {
+    font-size: 15px;
+    padding: 60px 0;
+    line-height: 40px;
+}
+
+#wrap .footerinner .f_contact .T {
+    margin: 120px;
+}
+
+#wrap .footerinner .f_contact .E {
+    margin: 93px;
+}
+
+#wrap .footerinner .f_contact .A {
+    margin: 77px;
+}
+
+#wrap .footerinner .terms {
+    font-size: 15px;
+    padding: 60px 0;
+    line-height: 40px;
+}
+
